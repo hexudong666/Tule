@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hexudong</groupId>
+  <artifactId>1230rikao</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+ 		<!-- 配置spring-context(4.2.4)的jar包依赖 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>4.2.4.RELEASE</version>
+		</dependency>
+		 <!-- 配置spring-struts 的jar（3.0.5）包依赖 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-struts</artifactId>
+		    <version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>3.0.5.RELEASE</version>
+  		<!-- 通过排除的方法,排除3.0.5版本的spring-beans -->
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>org.springframework</groupId>
+		    		<artifactId>spring-beans</artifactId>
+		    	</exclusion>
+		    </exclusions>
+		</dependency>
+  		
+  		
+  	
+  </dependencies>
+</project>
